@@ -22,16 +22,18 @@ Add properties to your AWS credentials file
 
 ```ini
 [some-profile]
-saml_sso_url = <url you use for saml>
+saml_sso_url = <url you use for saml, either okta saml or whatever you use>
 saml_role_arn = <your iam role to assume>
-saml_principal_arn = <your saml app arn>
-saml_duration = <duration of session in seconds>
+saml_principal_arn = <your saml idp arn>
+saml_duration = <duration of session in seconds, check iam role for maximum value>
 ```
 
 Run
 ```shell
 python -m aws-saml
 ```
+
+Warning: This will change your credentials file. If you don't want to do that, you can use `DRY_RUN=Y python -m aws-saml` which will only print the values.
 
 ## Installation
 ```pip install aws-cli-sso```

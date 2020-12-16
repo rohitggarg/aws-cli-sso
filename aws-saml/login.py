@@ -16,7 +16,6 @@ class Login:
     self.duration = int(duration)
 
   def go(self):
-    chrome = webdriver.Chrome
     driver = webdriver.Chrome(desired_capabilities=caps)
     driver.get(self.url)
     message = None
