@@ -1,6 +1,5 @@
 import configparser
 from login import Login
-from pathlib import Path
 
 class Config:
   def __init__(self, file_path):
@@ -22,4 +21,3 @@ class Config:
     
     with open(self.file_path, 'w') as configfile:
       self.config.write(configfile)
-

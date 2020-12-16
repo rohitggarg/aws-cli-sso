@@ -1,1 +1,4 @@
 __pycache__
+aws_cli_sso.egg-info/
+build/
+dist/

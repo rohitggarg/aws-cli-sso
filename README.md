@@ -1,4 +1,5 @@
 # AWS SAML Login
+
 Works cross platform (Win, Unix, MacOS)
 Was having a real hard time trying to get cli credentials via SAML SSO so thought about writing this small utility.
 I can run this daily every morning to get a 12 hour session for myself. Hope you'd find it interesting and useful.

@@ -1,4 +1,5 @@
 import os
+from pathlib import Path
 
 if os.getenv('NO_EXEC') == None:
   creds_file = input("AWS credentials file path: (~/.aws/credentials)")
