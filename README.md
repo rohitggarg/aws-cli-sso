@@ -8,9 +8,10 @@ Looking forward to contributions!!
 ## Prerequisites
 
 Need to install
-* Chromedriver
-* Google Chrome
-* Python 2/3
+* Chromedriver [?](https://chromedriver.chromium.org/downloads)
+* Google Chrome [?](https://www.google.com/chrome/thank-you.html?statcb=0&installdataindex=empty&defaultbrowser=0)
+* Python 2/3 [?](https://www.python.org/downloads/)
+* AWS Cli [?](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html)
 
 Make sure all the above software are setup properly in `PATH` environment variable
 
