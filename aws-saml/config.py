@@ -1,5 +1,6 @@
 import configparser
 from login import Login
+from pathlib import Path
 
 class Config:
   def __init__(self, file_path):
@@ -7,7 +8,7 @@ class Config:
     self.config.read(file_path)
     self.file_path = file_path
   
-  def fire_login(self, profile):
+  def fire_saml_login(self, profile):
     response = Login(
       self.config[profile]['saml_sso_url'],
       self.config[profile]['saml_role_arn'],
@@ -22,7 +23,3 @@ class Config:
     with open(self.file_path, 'w') as configfile:
       self.config.write(configfile)
 
-creds_file = input("AWS credentials file path: (~/.aws/credentials)")
-profile = input("AWS profile name: (default)")
-
-Config(creds_file or '~/.aws/credentials').fire_login(profile or 'default')
