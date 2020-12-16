@@ -1,5 +1,6 @@
 import configparser
-from login import Login
+import os
+from .login import Login
 
 class Config:
   def __init__(self, file_path):
@@ -18,6 +19,8 @@ class Config:
     self.config[profile]['aws_access_key_id'] = response['Credentials']['AccessKeyId']
     self.config[profile]['aws_secret_access_key'] = response['Credentials']['SecretAccessKey']
     self.config[profile]['aws_session_token'] = response['Credentials']['SessionToken']
-    
-    with open(self.file_path, 'w') as configfile:
-      self.config.write(configfile)
+    if os.getenv('DRY_RUN') == None:
+      with open(self.file_path, 'w') as configfile:
+        self.config.write(configfile)
+    else:
+      print(config[profile])

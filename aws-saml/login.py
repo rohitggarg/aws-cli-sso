@@ -5,7 +5,6 @@ import json
 from urllib import parse
 import boto3
 
-
 caps = DesiredCapabilities.CHROME
 caps['goog:loggingPrefs'] = {'performance': 'ALL'}
 
