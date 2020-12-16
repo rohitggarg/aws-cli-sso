@@ -10,7 +10,7 @@ def read(fname):
 
 setuptools.setup(
     name = "aws-cli-sso",
-    version = "0.1.0",
+    version = "0.1.1",
     author = "Rohit Garg",
     author_email = "rohitgarg19@gmail.com",
     description = ("A tool that you can use to SSO via AWS Identity Providers and reload aws session in credentials file."),
