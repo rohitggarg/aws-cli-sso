@@ -16,7 +16,7 @@ setuptools.setup(
     description = ("A tool that you can use to SSO via AWS Identity Providers and reload aws session in credentials file."),
     license = "MIT",
     keywords = "aws sso saml auth assume role sts idp",
-    url = "http://packages.python.org/aws-cli-sso",
+    url = "https://github.com/rohitggarg/aws-cli-sso",
     packages=setuptools.find_packages(),
     install_requires=[
         'selenium',
